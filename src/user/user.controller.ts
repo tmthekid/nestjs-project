@@ -4,10 +4,9 @@ import { UserService } from './user.service';
 
 @Controller('user')
 export class UserController {
-    userService : UserService
-    constructor(){
-        this.userService = new UserService
-    }
+    constructor(
+        private userService: UserService
+    ){}
 
     @Get()
     getUsers() {

@@ -1,6 +1,8 @@
 import { readFile, writeFile } from "fs/promises";
 import { CreateUserDto } from "./dto/create-user.dto";
+import { Injectable } from "@nestjs/common";
 
+@Injectable()
 export class User {
     
     async find () {
