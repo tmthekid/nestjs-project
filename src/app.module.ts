@@ -15,6 +15,7 @@ import { User } from './user/user.entity';
     port: 5433,
     entities: [User],
     synchronize: true,
+    dropSchema: false,
   }), UserModule],
   controllers: [AppController],
   providers: [AppService],
